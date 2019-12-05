@@ -17,13 +17,33 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: blueviolet;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 .svg-graphic {
   width: 200px;
+  height: 200px;
 }
 
 
-.site-container {
-  max-width: 85vw;
+// LAYOUT STYLE
+#content-Con {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cancer-Con {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+button {
+  margin: auto;
 }
 
 
@@ -37,16 +57,37 @@ h2 {
   margin-top: 8px;
 }
 
+/* POPOVER STYLES */
+
 .popover { 
+  background-color: white;
+  border: 3px solid plum; 
   display: none;
-  position: absolute;
-  top: 18%;
-  left: 110%;
-  background-color: orange;
-  width: 450px;
-  z-index: 1;
-  border-radius: 8px;
+  margin-top: 25px;
+  //position: absolute;
+  // position: relative;
+  width: 400px;
+  height:260px;
   padding: 4px;
+  z-index: 1;
 }
 
-.show-popover { display: block; }
+.show-popover { display: inline-block; }
+
+.description {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: mediumvioletred;
+}
+
+.incidence-men, .death-men {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: purple;
+}
+
+.incidence-women, .death-women {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: rgb(156, 12, 91);
+}

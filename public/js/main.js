@@ -6,18 +6,17 @@
  let seeMoreButtons = document.querySelectorAll('.see-more'), 
       popOver = document.querySelector('.popover');
 
-      
-      
+         
   function showPopover(cancerdata, el) {
     popOver.querySelector(".description").textContent = cancerdata.description;
-    popOver.querySelector(".incidence-men").textContent = `Incidence-Men: ${cancerdata.incidence-men}`;
-    popOver.querySelector(".incidence-women").textContent = `Incidence-Women: ${cancerdata.incidence-women}`;
-    popOver.querySelector(".death-men").textContent =`Mortality-Men: ${cancerdata.death-men}`;
-    popOver.querySelector(".death-women").textContent = `Mortality-Women: ${cancerdata.death-women}`;
+    popOver.querySelector(".incidence-men").textContent = `Incidence-Men: ${cancerdata.incidencemen}`;
+    popOver.querySelector(".incidence-women").textContent = `Incidence-Women: ${cancerdata.incidencewomen}`;
+    popOver.querySelector(".death-men").textContent =`Mortality-Men: ${cancerdata.deathmen}`;
+    popOver.querySelector(".death-women").textContent = `Mortality-Women: ${cancerdata.deathwomen}`;
          
     popOver.classList.add('show-popover');
     
-    el.appendChild(popOver);
+    //el.appendChild(popOver);
 }
   //do fetch call for database
   function fetchData() {
