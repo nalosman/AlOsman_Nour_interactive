@@ -1,4 +1,52 @@
-h1 {
-  color: plum;
-  font-family: 'Courier New', Courier, monospace;
+//font-family: 'Roboto Mono', monospace;
+// font-family: 'Montserrat', sans-serif;
+body {
+  background-color: whitesmoke;
 }
+h1 {
+  color: blueviolet;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(188, 145, 228);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
+  text-align: center;
+}
+
+.svg-graphic {
+  width: 200px;
+}
+
+
+.site-container {
+  max-width: 85vw;
+}
+
+
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  color: black; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  background-color:plum; 
+  margin-top: 8px;
+}
+
+.popover { 
+  display: none;
+  position: absolute;
+  top: 18%;
+  left: 110%;
+  background-color: orange;
+  width: 450px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.show-popover { display: block; }
