@@ -4,14 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i|Roboto+Mono:400,500&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="css/main.css">
   <title>Interactive | The State of Cancer</title>
 </head>
 <body>
+  <main class="site-container">
+    <header>
+      <h1>The State of Cancer in Canada in 2019</h1>
+      <h2>Most Common Cancers in Canada</h2>
+    </header>
 
+  <div id="content-Con">
+      <section id="cancer1">
+        <h3>1. Lung Cancer</h3>
+        <object data="images/lung-icon.svg" type="image/svg+xml" class="svg-graphic" id="lung"></object>
+        <button class="see-more" data-target="1">Cancer Stats</button>
+      </section>
+      
+      <section id="cancer2">
+        <h3>2. Breast Cancer</h3>
+        <object data="images/breast-icon.svg" type="image/svg+xml" class="svg-graphic" id="breast"></object>
+        <button class="see-more" data-target="2">Cancer Stats</button>
+      </section>
+    
+      <section id="cancer3">
+        <h3>3. Colorectal Cancer</h3>
+        <object data="images/colon-icon.svg" type="image/svg+xml" class="svg-graphic" id="colon"></object>
+        <button class="see-more" data-target="3">Cancer Stats</button>
+      </section>
+    
+      <section id="cancer4">
+        <h3>4. Prostate Cancer</h3>
+        <object data="images/prostate-icon.svg" type="image/svg+xml" class="svg-graphic" id="prostate"></object>
+        <button class="see-more" data-target="4">Cancer Stats</button>
+      </section>
+    
+      <section id="cancer5">
+        <h3>5. Bladder Cancer</h3>
+        <object data="images/bladder-icon.svg" type="image/svg+xml" class="svg-graphic" id="bladder"></object>
+        <button class="see-more" data-target="5">Cancer Stats</button>
+      </section>
+  </div>
 
-  <h1>HELLLLLOOOOOO WORLD!!!!!</h1>
-  
+  <article class="popover">
+      <p class="description"></p>
+      <div class="incidence-men"></div>
+      <p class="incidence-women"></p>
+      <div class="death-men"></div>
+      <p class="death-women"></p>
+  </article>
+
+  </main>
+  <script src="js/main.js"></script>
 </body>
 </html>
