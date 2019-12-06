@@ -1,24 +1,47 @@
 //font-family: 'Roboto Mono', monospace;
 // font-family: 'Montserrat', sans-serif;
+@import '_vars';
+
+/* General rules - scales images, videos to size of container */
+img, embed, object, video {
+  max-width: 100%; }
+
+
+/*switch box model*/
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/*Fix for scaling of images IE*/
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
 body {
   background-color: whitesmoke;
 }
 h1 {
-  color: blueviolet;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
+  color: $color-one;
+  font-family: $font-one;
+  font-size: 2.5em;
   text-align: center;
 }
 
 h2 {
-  color: rgb(188, 145, 228);
-  font-family: 'Roboto Mono', monospace;
+  color: $color-two;
+  font-family: $font-two; 
   font-size: 2em;
   text-align: center;
 }
 
 h3 {
-  color: blueviolet;
+  color: $color-one;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   text-align: center;
@@ -27,6 +50,12 @@ h3 {
 .svg-graphic {
   width: 200px;
   height: 200px;
+}
+
+#lung:hover {
+  transform: scale(.75);
+  transition-duration: 2s;
+  opacity: 0.5;
 }
 
 
